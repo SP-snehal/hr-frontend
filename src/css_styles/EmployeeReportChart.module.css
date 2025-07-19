@@ -1,0 +1,25 @@
+.chartContainer {
+  background-color: white;
+  padding: 20px;
+  margin-left: 490px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.chartTitle {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.chartWrapper {
+  width: 100%;
+  height: 450px;
+  min-height: 400px;
+}
+
+.submitbtes{
+  background-color: black;
+  margin-left: 10px;
+}

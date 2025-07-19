@@ -1,0 +1,138 @@
+/* Header */
+body {
+  background: url("../assets/Jd2q0L.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Arial", sans-serif;
+} 
+
+
+.header {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700; /* ✅ Bold but not too heavy */
+  margin-bottom: 20px;
+  color: #fff;
+  background: linear-gradient(90deg, #007bff, #000); /* ✅ Blue to Black */
+  padding: 12px;
+  margin-left: 300px;
+  border-radius: 6px;
+}
+.React{
+  margin-bottom: 200px;
+
+}
+
+/* Grid Layout for Employee Cards (4 items per row) */
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Always 4 items per row */
+  gap: 45px;
+  margin-top: 45px;
+  margin-left: 350px;
+  padding: 40px;
+  justify-content: center;
+}
+
+/* Employee Card */
+.employeeCard {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  width: 200px; /* Set fixed width */
+  height: 250px; /* Set fixed height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Ensure proper spacing */
+}
+
+.employeeCard:hover {
+  transform: scale(1.05);
+}
+
+
+/* Employee Info */
+.employeeInfo h3 {
+  font-size: 22px;
+  margin: 20px 0;
+  color: #333;
+}
+
+.employeeInfo p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #666;
+}
+
+/* Button Container */
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin-bottom: 10px;
+}
+
+/* Primary Button */
+.btnPrimary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 9px 22px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btnPrimary:hover {
+  background-color: #0056b3;
+}
+
+/* Danger Button */
+.btnDanger {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btnDanger:hover {
+  background-color: #c82333;
+}
+
+/* Loading & No Employees Found Text */
+h3 {
+  text-align: center;
+  color: #666;
+}
+
+/* ✅ Responsive: Change to 3 columns on medium screens */
+@media (max-width: 900px) {
+  .gridContainer {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+  }
+}
+
+/* ✅ Responsive: Change to 2 columns on smaller screens */
+@media (max-width: 700px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+}
+
+/* ✅ Responsive: Change to 1 column on very small screens */
+@media (max-width: 500px) {
+  .gridContainer {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+}

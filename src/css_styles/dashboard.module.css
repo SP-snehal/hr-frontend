@@ -1,0 +1,120 @@
+/* ✅ Reset and Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ✅ Sidebar */
+.sidebar {
+  width: 250px; /* Sidebar ki fixed width */
+  height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ✅ Table Container */
+.tablecontainer {
+  flex-grow: 1;
+  margin-left: 250px; /* Sidebar ke baad exact fit */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  background-image: url(../assets/abstract.jpeg);
+  padding: 30px;
+  width: calc(100% - 250px); /* Sidebar adjust hone par table bhi adjust hoga */
+  height: 100vh;
+  overflow: auto; /* Scroll enable for long content */
+}
+
+/* ✅ Heading */
+h1 {
+  font-family: "Londrina Sketch", serif;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* ✅ Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 19px;
+  border-bottom: 1px solid #add;
+  font-family: "Sahitya", serif;
+  font-weight: 900;
+  text-align: left;
+}
+
+th {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+th:hover {
+  background-color: rgba(54, 41, 41, 0.1);
+}
+
+td {
+  color: white;
+  font-weight: 500;
+  background-color: transparent;
+}
+
+tr {
+  background-color: transparent;
+  border: none;
+}
+
+tr:hover {
+  background-color: gray;
+}
+
+/* ✅ Action Buttons */
+button {
+  float: right;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: white;
+  color: #1e1e2f;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .tablecontainer {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+  }
+
+  th, td {
+    padding: 12px;
+
+  }
+}
